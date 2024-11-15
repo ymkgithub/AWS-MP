@@ -18,7 +18,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git credentialsId: 'gogs-cred', url: 'https://gogs.bicsglobal.com/BICS_IT/K8S-Drupal-IAC.git' // Your Git repository
+                git branch: 'main', url: 'https://github.com/ymkgithub/AWS-MP.git' // Your Git repository
             }
         }
 

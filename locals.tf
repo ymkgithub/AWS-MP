@@ -17,9 +17,7 @@ locals {
   secret_name = "${terraform.workspace}/drupal/secrets"
   eks_name          = "drupal-eks"
   eks_version       = "1.29"
-  db_name           = "${local.env_name}rds"
-  db_identifier     = "${local.env_name}-rds-identifier"
-  db_subnet_group_name  = "${local.env_name}-rds-subnet-grp"
-  # redis_name           = "${local.env_name}-redis"
-  # redis_cluster_id            = "${local.env_name}-redis"
+  # db_name           = "${local.env_name}rds"
+  # db_identifier     = "${local.env_name}-rds-identifier"
+  # db_subnet_group_name  = "${local.env_name}-rds-subnet-grp"
 }
