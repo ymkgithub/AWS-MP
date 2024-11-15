@@ -8,7 +8,7 @@ resource "aws_security_group" "my_app" {
     from_port       = 9100
     to_port         = 9100
     protocol        = "tcp"
-    security_groups = [aws_eks_cluster.demo.vpc_config[0].cluster_security_group_id]
+    security_groups = [aws_eks_cluster.eks.vpc_config[0].cluster_security_group_id]
   }
 
   ingress {
