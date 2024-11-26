@@ -20,4 +20,8 @@ locals {
   # db_name           = "${local.env_name}rds"
   # db_identifier     = "${local.env_name}-rds-identifier"
   # db_subnet_group_name  = "${local.env_name}-rds-subnet-grp"
+   tags = {
+    GithubRepo = "terraform-aws-observability-accelerator"
+    GithubOrg  = "aws-observability"
+  }
 }
